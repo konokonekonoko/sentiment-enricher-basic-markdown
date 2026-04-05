@@ -1,4 +1,4 @@
-import patterns from "./enricher-config.mjs";
+import patterns from "./enricher-config.js";
 
 // Inject Enricher Configs
 Hooks.once("init", async () => {
