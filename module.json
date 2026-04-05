@@ -1,0 +1,33 @@
+{
+  "id": "sentiment-enricher-basic-markdown",
+  "title": "Sentiment Enricher: Basic Markdown",
+  "description": "Sentiment TTRPG Text Enricher Extension",
+  "authors": [
+    {
+      "name": "(You)"
+    }
+  ],
+  "url": "https://github.com/konokonekonoko/sentiment-enricher-basic-markdown",
+  "manifest": "https://raw.githubusercontent.com/konokonekonoko/sentiment-enricher-basic-markdown/main/module.json",
+  "download": "https://github.com/konokonekonoko/sentiment-enricher-basic-markdown/archive/refs/heads/main.zip",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "esmodules": ["./module/init.js"],
+  "styles": ["./module/enricher.css"],
+  "relationships": {
+    "systems": [
+      {
+        "id": "sentiment",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/tomlaflin/sentiment/main/system.json",
+        "compatibility": {
+          "minimum": "0.2"
+        }
+      }
+    ],
+    "requires": []
+  }
+}
