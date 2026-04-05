@@ -1,32 +1,28 @@
 const patterns = [
     [
-        /\*\*\*([^*]+?)\*\*\*/, {
+        /\*\*\*([^*]+?)\*\*\*/g, {
             classes: ["bold", "italics"],
-            flags: "g",
             printGroupNo: 1,
             priority: 100,
         },
     ],
     [
-        /(?<!\*)\*\*([^*]+?)\*\*(?!\*)/, {
+        /(?<!\*)\*\*([^*]+?)\*\*(?!\*)/g, {
             classes: ["bold"],
-            flags: "g",
             printGroupNo: 1,
             priority: 100,
         },
     ],
     [
-        /(?<!\*)\*([^*]+?)\*(?!\*)/, {
+        /(?<!\*)\*([^*]+?)\*(?!\*)/g, {
             classes: ["italics"],
-            flags: "g",
             printGroupNo: 1,
             priority: 100,
         },
     ],
     [
-        /^(?<!#)# (.+)/, {
+        /^(?<!#)# (.+)/g, {
             classes: ["heading"],
-            flags: "g",
             printGroupNo: 1,
             strFormat: {
                 wrapper: ["<h1>", "</h1>"],
@@ -35,9 +31,8 @@ const patterns = [
         },
     ],
     [
-        /^(?<!#)## (.+)/, {
+        /^(?<!#)## (.+)/g, {
             classes: ["heading"],
-            flags: "g",
             printGroupNo: 1,
             strFormat: {
                 wrapper: ["<h2>", "</h2>"],
@@ -46,9 +41,8 @@ const patterns = [
         },
     ],
     [
-        /^(?<!#)### (.+)/, {
+        /^(?<!#)### (.+)/g, {
             classes: ["heading"],
-            flags: "g",
             printGroupNo: 1,
             strFormat: {
                 wrapper: ["<h3>", "</h3>"],
@@ -57,9 +51,8 @@ const patterns = [
         },
     ],
     [
-        /^####+ (.+)/, {
+        /^####+ (.+)/g, {
             classes: ["heading"],
-            flags: "g",
             printGroupNo: 1,
             strFormat: {
                 wrapper: ["<h4>", "</h4>"],
@@ -68,9 +61,8 @@ const patterns = [
         },
     ],
     [
-        /^\s*([\*-]) +(?=\w)/, {
+        /^\s*([\*-]) +(?=\w)/g, {
             classes: ["list"],
-            flags: "g",
             priority: 100,
         },
     ],
