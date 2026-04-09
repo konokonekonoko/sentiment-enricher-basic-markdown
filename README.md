@@ -9,14 +9,14 @@ Paste this link into the "Install Module" Dialog's "Manifest URL" field and clic
 Then enable the module in your world.
 
 ### Manual
-[Download this repo as a zip](https://github.com/konokonekonoko/sentiment-enricher-basic-markdown/archive/refs/heads/main.zip) and unzip it in your `FoundryVTT/Data/modules` directory. Usually `%user%\AppData\Local\FoundryVTT\Data\modules` on Windows or `/home/$USER/.local/share/FoundryVTT/Data/modules` on Linux.
+[Download this repo as a zip](https://github.com/konokonekonoko/sentiment-enricher-basic-markdown/archive/refs/heads/main.zip) and unzip it in your `FoundryVTT/Data/modules` directory. Usually `%user%\AppData\Local\FoundryVTT\Data\modules` on Windows or `/home/$USER/.local/share/FoundryVTT/Data/modules` on Linux. Then remove the `-main` from the folder name.
 
 The directory structure should be as follows:
 ```
 FoundryVTT/
 └ Data/
   ├ modules/
-  │ ├ sentiment-enricher-basic-markdown-main/
+  │ ├ sentiment-enricher-basic-markdown/
   │ └ [other module directories]/
   └ [other directories]/
 ```
